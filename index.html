@@ -77,16 +77,16 @@
                 <span id="agency">XXX</span>&nbsp;&nbsp;<br />                
                 <span style="padding:0px;margin:0px;" id="date-span">00 XXX 0000</span>
                 <span style="padding:0px;margin:0px;" id="time-span">00:00:00</span>
-                <span style="padding:0px;margin:0px;" id="tz">UTC</span>&nbsp;&nbsp;
+                <span style="padding:0px;margin:0px;" id="tz">UTC-4,</span>&nbsp;&nbsp;
             </div>
         </div>
     </body>
     
     <script>
         //***edit this only for your information***
-        const player = "A. Miransa";
-        const agency = "Policia Militar (PMMG)";
-        const callsign = "[929]";
+        const player = "Abner M.";
+        const agency = "POLICIA MILITAR DO ESTADO DE MINAS GERAIS";
+        const callsign = "[PM-929]";
         //***        end edit this only         ***
     
         const monthNames = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
@@ -117,7 +117,7 @@
             var h=dt.getUTCHours().toString();
             var m=dt.getUTCMinutes().toString();
             var s=dt.getUTCSeconds().toString();
-            h = h.length == 1 ? '0' + h : h;
+            h = h.length == 1 ? '0' + h : '09';
             m = m.length == 1 ? '0' + m : m;
             s = s.length == 1 ? '0' + s : s;
             var t_str = h + ":" + m + ":" + s + " ";
